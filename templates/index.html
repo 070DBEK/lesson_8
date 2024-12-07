@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <button>
+        <a href="{% url 'students:student_list' %}">Student List</a>
+    </button>
+    <br>
+    <br>
+    <button>
+        <a href="{% url 'teachers:teacher_list' %}">Teacher List</a>
+    </button>
+    <br>
+    <br>
+    <button>
+        <a href="{% url 'groups:group_list' %}">Group List</a>
+    </button>
+    <br>
+    <br>
+</body>
+</html>
+
+
