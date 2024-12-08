@@ -14,16 +14,16 @@ def add_group(request):
         if (group_name and
                 group_type):
             Group.objects.create(
-                group_name=group_name,
-                group_type=group_type
+                group_name=group_type,
+                group_type=group_type,
             )
             return redirect('groups:group_list')
     return render(request, 'groups/add_group.html')
 
 
 def group_list(request):
-    group= Group.objects.all()
-    ctx = {'group': group}
+    groups= Group.objects.all()
+    ctx = {'groups': groups}
     return render(request, 'groups/group_list.html', ctx)
 
 

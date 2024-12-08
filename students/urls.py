@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import student_list, add_student, student_detail, student_delete
+
 
 
 app_name = 'students'

@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from students.urls import app_name
+
 
 
 app_name = 'groups'
